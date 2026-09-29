@@ -1,0 +1,38 @@
+// Generado por scripts/generar-iconos.py. No editar a mano.
+// Iconos: Phosphor Icons (Bold), licencia MIT, https://phosphoricons.com
+export const ICONOS = {
+  'sun': '\u{e472}',
+  'pill': '\u{e700}',
+  'calendar-check': '\u{e712}',
+  'users-three': '\u{e68e}',
+  'gear-six': '\u{e272}',
+  'check': '\u{e182}',
+  'check-circle': '\u{e184}',
+  'minus': '\u{e32a}',
+  'clock': '\u{e19a}',
+  'clock-countdown': '\u{ed2c}',
+  'x': '\u{e4f6}',
+  'x-circle': '\u{e4f8}',
+  'question': '\u{e3e8}',
+  'info': '\u{e2ce}',
+  'warning': '\u{e4e0}',
+  'warning-octagon': '\u{e4e4}',
+  'plus': '\u{e3d4}',
+  'caret-right': '\u{e13a}',
+  'bell-ringing': '\u{e5e8}',
+  'user': '\u{e4c2}',
+  'key': '\u{e2d6}',
+  'share-network': '\u{e408}',
+  'file-text': '\u{e23a}',
+  'list-checks': '\u{eadc}',
+  'confetti': '\u{e81a}',
+  'shield-check': '\u{e40c}',
+  'trash': '\u{e4a6}',
+  'sign-out': '\u{e42a}',
+  'download-simple': '\u{e20c}',
+  'battery-warning': '\u{e0c8}',
+  'alarm': '\u{e006}',
+  'envelope-simple': '\u{e218}',
+} as const;
+
+export type NombreIcono = keyof typeof ICONOS;

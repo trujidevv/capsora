@@ -1,0 +1,57 @@
+<!-- Supabase → Authentication → Emails → Reset password (necesita SMTP propio).
+     Asunto: 🔑 Tu código de Capsora: {{ .Token }} -->
+<!DOCTYPE html>
+<html lang="es">
+<body style="margin:0;padding:0;background-color:#F4F1EA;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F4F1EA;padding:32px 16px;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:520px;background-color:#FFFFFF;border-radius:16px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+          <tr>
+            <td align="center" style="background-color:#2E6F6B;padding:28px 24px;">
+              <div style="font-size:40px;line-height:1;">💊</div>
+              <div style="font-family:Arial,Helvetica,sans-serif;font-size:26px;font-weight:bold;color:#FFFFFF;margin-top:8px;">Capsora</div>
+              <div style="font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#D6EAE8;margin-top:4px;">Tus recordatorios de medicación</div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:32px 32px 8px 32px;font-family:Arial,Helvetica,sans-serif;color:#1F2A2A;">
+              <h1 style="font-size:24px;margin:0 0 12px 0;color:#1F2A2A;">Cambia tu contraseña</h1>
+              <p style="font-size:18px;line-height:1.5;margin:0 0 24px 0;">
+                Escribe este código en la app para poner una contraseña nueva:
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding:0 32px;">
+              <div style="display:inline-block;background-color:#E6F2F1;border:2px dashed #2E6F6B;border-radius:12px;padding:18px 28px;font-family:'Courier New',Courier,monospace;font-size:40px;font-weight:bold;letter-spacing:10px;color:#2E6F6B;">
+                {{ .Token }}
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:24px 32px 8px 32px;font-family:Arial,Helvetica,sans-serif;color:#1F2A2A;">
+              <p style="font-size:16px;line-height:1.5;margin:0 0 16px 0;">
+                ⏰ El código caduca en <strong>1 hora</strong>.
+              </p>
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#FFF6E5;border-radius:10px;">
+                <tr>
+                  <td style="padding:14px 16px;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.5;color:#5A4A1F;">
+                    🔒 <strong>¿No lo has pedido tú?</strong> Ignora este correo: tu contraseña no cambiará. Nunca te pediremos este código por teléfono ni por WhatsApp.
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding:24px 32px 28px 32px;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.5;color:#6B7777;border-top:1px solid #EEEEEE;">
+              Capsora · Recordatorio de medicación con modo familia<br>
+              Este correo se ha enviado automáticamente, no hace falta responder.
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

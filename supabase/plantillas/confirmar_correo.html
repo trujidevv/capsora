@@ -1,0 +1,60 @@
+<!-- Supabase → Authentication → Emails → Confirm signup (necesita SMTP propio).
+     Asunto: Confirma tu correo para usar Capsora
+     Antes de activar «Confirm email» (Authentication → Sign In / Providers → Email), poner en
+     Authentication → URL Configuration → Site URL: https://<dominio>/cuenta-confirmada
+     (tras pulsar el enlace, Supabase lleva ahí; la página dice que ya se puede volver a la app). -->
+<!DOCTYPE html>
+<html lang="es">
+<body style="margin:0;padding:0;background-color:#F4F1EA;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F4F1EA;padding:32px 16px;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:520px;background-color:#FFFFFF;border-radius:16px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+          <tr>
+            <td align="center" style="background-color:#2E6F6B;padding:28px 24px;">
+              <div style="font-family:Arial,Helvetica,sans-serif;font-size:26px;font-weight:bold;color:#FFFFFF;">Capsora</div>
+              <div style="font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#D6EAE8;margin-top:4px;">Tus recordatorios de medicación</div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:32px 32px 8px 32px;font-family:Arial,Helvetica,sans-serif;color:#1F2A2A;">
+              <h1 style="font-size:24px;margin:0 0 12px 0;color:#1F2A2A;">Confirma tu correo</h1>
+              <p style="font-size:18px;line-height:1.5;margin:0 0 24px 0;">
+                Pulsa el botón para confirmar que este correo es tuyo. Después vuelve a Capsora e inicia sesión.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding:0 32px;">
+              <a href="{{ .ConfirmationURL }}" style="display:inline-block;background-color:#2E6F6B;color:#FFFFFF;font-family:Arial,Helvetica,sans-serif;font-size:20px;font-weight:bold;text-decoration:none;padding:16px 32px;border-radius:999px;">
+                Confirmar mi correo
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:24px 32px 8px 32px;font-family:Arial,Helvetica,sans-serif;color:#1F2A2A;">
+              <p style="font-size:15px;line-height:1.5;margin:0 0 16px 0;color:#5B6260;">
+                Si el botón no funciona, copia este enlace en el navegador:<br>
+                <a href="{{ .ConfirmationURL }}" style="color:#2E6F6B;word-break:break-all;">{{ .ConfirmationURL }}</a>
+              </p>
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#FFF6E5;border-radius:10px;">
+                <tr>
+                  <td style="padding:14px 16px;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.5;color:#5A4A1F;">
+                    <strong>¿No has creado tú la cuenta?</strong> Ignora este correo: sin confirmar, la cuenta no se puede usar.
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding:24px 32px 28px 32px;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.5;color:#6B7777;border-top:1px solid #EEEEEE;">
+              Capsora · Recordatorio de medicación con modo familia<br>
+              Este correo se ha enviado automáticamente, no hace falta responder.
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,5 @@
+node_modules/
+android/
+ios/
+# Funciones del servidor (Deno, no React Native)
+supabase/functions/
