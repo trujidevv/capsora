@@ -104,5 +104,6 @@ npm test
 
 ## License
 
-© 2026 Sergio Trujillo. All rights reserved. The code is public so it can be read as a portfolio project; please ask
-before reusing it. Capsora is not a medical device and does not replace advice from a doctor or pharmacist.
+© 2026 Sergio Trujillo. **All rights reserved** (see [LICENSE](LICENSE)). The code is public so it can be read as a
+portfolio project; copying it or publishing it, or any app derived from it, is not allowed without written permission.
+Capsora is not a medical device and does not replace advice from a doctor or pharmacist.
